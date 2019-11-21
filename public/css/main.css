@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    /* height: ; */
+}
+
+.parallax-bg {
+    height: 100px;
+    position: relative;
+    background-image: linear-gradient(to right bottom , rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)), url(../images/img2.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0 , 100% 0, 100% 70% ,0 100%);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+.center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background: transparent;
+    border: none;
+}
+
+.btn_v1:link,
+.btn_v1:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 55px;
+    display: inline-block;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgba(19,106,138, .8),rgba(38,120,113, .8));
+    color: #fff;
+    transition: all .2s;
+    font-size: 13.5px;
+}
+.btn_v1:hover{
+    transform: translateY(-3px);
+    box-shadow:  0 10px 20px rgba(0,0,0, .2);
+}
+.btn_v1:active{
+    transform: translateY(-1px);
+    box-shadow:  0 5px 10px rgba(0,0,0, .2);
+}
+
+.card-style{
+    border: none;
+    height: 100%;
+    background: transparent;
+}
+.text-star::after {
+    /*content: "\2605";*/
+    content: "*";
+    position: absolute;
+    color: #ef5350 !important;
+}
+
+.loader{
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid rgba(38,120,113, .8); /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.box-shadow{
+    -webkit-box-shadow: 10px 10px 25px 2px rgba(221,221,221,1);
+    -moz-box-shadow: 10px 10px 25px 2px rgba(221,221,221,1);
+    box-shadow: 10px 10px 25px 2px rgba(221,221,221,1);
+}
+
+.btn-show{
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    padding: 10px;
+    background: lightgray;
+    /* color: white; */
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn-show a{
+    color: gray;
+    text-decoration: none;
+}
+
+.fixed{
+    display: flex;
+    justify-content: center;
+    border: none !important;
+}

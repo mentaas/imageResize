@@ -1,0 +1,1 @@
+<div id="copyright text-right" style="position: fixed; bottom: 0; width: 100%; background: white; text-align: center">© Copyright 2019 Image Resize </div>
